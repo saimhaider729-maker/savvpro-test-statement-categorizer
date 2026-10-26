@@ -64,10 +64,13 @@ compose.yml Docker Compose setup
 
  Because i made it so when duplicate files are added (uploading the same file twice), the application identifies the identical hashes and flags the whole file as duplicate, meaning it will force them to the not spending category so double counting can be prevented. This is something i feel like is imperative for an application like this, as it's easy to make huge mistakes due to double counting if someone isn't cautious. To do a complete clean restart, the local.db file needs to be deleted. This can be safely done using these commands in the terminal:
  
-Remove-Item -Recurse -Force local.db
+ Remove-Item -Recurse -Force local.db
 
 
-New-Item local.db -ItemType File
+ New-Item local.db -ItemType File
 
-Then finally, start the application with docker
-docker compose up --build
+ Then finally, start the application with docker
+ docker compose up --build
+ NOTE: I had to use my alternate github account as my primary one (Saimhaider26) got suspended, reason unknown but it's looking like it's because of me linking it to fiverr which in turn possibly flagged it as third party bot.
+
+ 
